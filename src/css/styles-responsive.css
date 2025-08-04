@@ -1,0 +1,246 @@
+@media screen and (min-width: 650px) {
+    /* INDEX */
+
+    /*==== SECTIONS ====*/
+    .main-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .profile-container {
+        padding: 20vh 5vw;
+        width: 50vw;
+    }
+    
+    .contents-container {
+        padding: 5vh 5vw;
+        width: 50vw;
+    }
+
+    .main-content {
+        margin: 10vh 0;
+    }
+
+    .projects-title {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        border-radius: 30px;
+    }
+
+    /*==== BUTTONS ====*/
+    .nav-btn {
+        width: 6vw;
+        height: 6vh;
+        margin-top: -2vh;
+    }
+
+    .cta-btn {
+        width: 15vw;
+        border-radius: 30px;
+        margin-top: 3vh;
+        font-size: 0.82rem !important;
+    }
+
+    .project-btn {
+        width: 15vw;
+        border-radius: 150px;
+        margin-top: 3vh;
+    }
+
+    /*==== TEXT ====*/
+    .jaro-h1 { font-size: 5vw; }
+
+    .content-desc {
+        line-height: 5vh;
+    }
+
+    .job-title {
+        font-size: 1.5vw;
+        width: 20vw;
+    }
+
+    /*==== IMAGES ====*/
+    #round-profile {width: 35vw; height: 40vh;}
+
+    .nav-btn-img {
+        width: 3.5vw;
+        margin: 20% 20%;
+    }
+
+    .project-image {
+        width: 24vw;
+        height: 24vh;
+    }
+
+    .tech-icon {
+        width: 15vw;
+        height: 15vh;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .tech-item { width: 100px; }
+    .tech-icon { width: 60px; height: 60px; }
+    .tech-label { font-size: 1.05rem; }
+}
+
+@media screen and (min-width: 930px) {
+    /* INDEX */
+
+    /*==== SECTIONS ====*/
+    .main-content {
+        margin: 10vh 0;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        height: 160vh;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .project-card {
+        width: 20vw;
+        height: 60vh;
+        padding: 7vh 2vw;
+        gap: 5px;
+        margin: 2vh 0;
+    }
+
+    .hero-section {
+        padding: 5vh 0 10vh 0;
+    }
+
+    /*==== BUTTONS ====*/
+    .nav-btn {
+        width: 5vw;
+        height: 5vw;
+        border: 50%;
+        margin-top: -3.5vh;
+    }
+
+    .project-btn {
+        font-size: 0.8rem;
+    }
+
+    .cta-btn {
+        width: 17vw;
+        margin-top: 3vh;
+        font-size: 1.5vw !important;
+    }
+
+    .hero-btn {
+        left: 0;
+    }
+
+    .contact-btn {
+        width: 20vw;
+        height: 5vh;
+        padding: 1vw 1vh;
+        left: 2vw;
+        font-size: 1.2rem;
+    }
+
+    /*==== TEXT ====*/
+    .jaro-h2 { font-size: 2vw; }
+
+    .project-desc {
+        font-size: 1.2vw;
+    }
+
+    .jaro-h3 {
+        font-size: 3vw;
+    }
+
+    /*==== IMAGES ====*/
+    #round-profile {width: 25vw; height: 40vh;}
+
+    .nav-btn-img {
+        width: 3vw;
+        margin: 20% 20%;
+    }
+
+    .tech-icon {
+        width: 8vw;
+        height: 10vh;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .tech-item { width: 120px; }
+    .tech-icon { width: 72px; height: 72px; }
+    .tech-label { font-size: 1.15rem; }
+}
+
+@media screen and (min-width: 1300px) {
+    /* INDEX */
+
+    /*==== SECTIONS ====*/
+    .projects {
+        display: flex;
+        flex-direction: column;
+        height: 135vh;
+        margin-bottom: 35vh;
+    }
+
+    .projects-title {
+        margin: 5vh 0;
+    }
+
+    .contact-card {
+        top: -20vh;
+    }
+
+    /*==== BUTTONS ====*/
+    .nav-btn {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+    }
+
+    .cta-btn {
+        width: 9vw;
+        margin-top: 3vh;
+        font-size: 0.9rem !important;
+    }
+
+    .hero-btn {
+        height: 3.5vh;
+        width: 20vw;
+        padding: 1vw 1vh;
+        left: 2vw;
+    }
+
+    /*==== TEXT ====*/
+    .os-p {
+        font-size: 1rem; /* Use rem for better scaling */
+    }
+
+    /*==== IMAGES ====*/
+    #round-profile {width: 25vw; height: 50vh;}
+
+    .project-image {
+        width: 24vw;
+        height: 24vh;
+        box-shadow: 0 5px 5px #111D4A;;
+    }
+
+    .tech-icon {
+        width: 8vw;
+        height: 15vh;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .tech-item { width: 140px; }
+    .tech-icon { width: 84px; height: 84px; }
+    .tech-label { font-size: 1.25rem; }
+}
