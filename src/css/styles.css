@@ -2,13 +2,14 @@
 
 /*==== SECTIONS ====*/
 .main-container {
-    width: 90%;
+    max-width: 90%;
     height: 100vh;
     background-color: #FFF8F0;
-    margin: 5vh 5vw;
+    margin: 5vh auto;
     border-radius: 20px;
     box-shadow: 0 5px 5px #111D4A;
     z-index: 0;
+    animation: openTransition 1s ease-in-out forwards;
 }
 
 .profile-container {
@@ -145,6 +146,7 @@
     background-color: #92140C;
     position: relative;
     transition: transform 0.3s ease;
+    border: none;
 }
 
 .nav-btn:hover {
@@ -286,7 +288,7 @@
 
 .nav-btn-img {
     width: 8vw;
-    margin: 25% 25%;
+    margin: 25% 20%;
 }
 
 .project-image {
@@ -318,6 +320,18 @@
 
 /* OTHERS */
 
+@keyframes openTransition {
+    from {
+        transform: translateX(90%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .front-end {
     color: #92140C;
 }
@@ -340,4 +354,5 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden !important;
 }
