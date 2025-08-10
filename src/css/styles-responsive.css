@@ -64,10 +64,19 @@
     /*==== IMAGES ====*/
     #round-profile {width: 35vw; height: 40vh;}
 
+    #profile-wheel {
+        width: 45vw;
+        top: 24vh;
+    }
+
     .nav-btn-img {
         width: 3.5vw;
-        margin: 20% 5%;
+        margin: 15% 20%;
     }
+
+    .tech-nav-icon {margin: 0 35%; width: 2vw;}
+
+    .contact-nav-icon {width: 4vw; margin: 10% 20%;}
 
     .project-image {
         width: 24vw;
@@ -163,9 +172,17 @@
     /*==== IMAGES ====*/
     #round-profile {width: 25vw; height: 40vh;}
 
+    #profile-wheel {
+        width: 32vw;
+    }
+
     .nav-btn-img {
         width: 3vw;
     }
+
+    .contact-nav-icon {width: 4vw; margin: 5% 15%;}
+
+    .tech-nav-icon {margin: 5% 35%; width: 1.5vw;}
 
     .tech-icon {
         width: 8vw;
@@ -206,9 +223,9 @@
     }
 
     .cta-btn {
-        width: 9vw;
+        width: 10vw;
         margin-top: 3vh;
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
 
     .hero-btn {
@@ -225,6 +242,11 @@
 
     /*==== IMAGES ====*/
     #round-profile {width: 25vw; height: 50vh;}
+
+    #profile-wheel {
+        width: 30vw;
+        top: 21vh;
+    }
 
     .project-image {
         width: 24vw;
