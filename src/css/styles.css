@@ -9,7 +9,8 @@
     border-radius: 20px;
     box-shadow: 0 5px 5px #111D4A;
     z-index: 0;
-    animation: openTransition 1s ease-in-out forwards;
+    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    animation: openTransition 1s ease-in-out;
 }
 
 .profile-container {
@@ -146,7 +147,6 @@
     background-color: #92140C;
     position: relative;
     transition: transform 0.3s ease;
-    border: none;
 }
 
 .nav-btn:hover {
@@ -193,7 +193,6 @@
     left: 22vw;
     background-color: #FFCF99;
     border-radius: 25px;
-    transition: transform 0.3s ease;
 }
 
 /* Add or update in your styles.css */
@@ -284,11 +283,30 @@
 #round-profile {
     width: 45vw;
     height: 30vh;
+    display: flex;
+    position: relative;
+    top: 3vh;
+}
+
+#profile-wheel {
+    position: absolute;
+    display: flex;
+    width: 55vw;
 }
 
 .nav-btn-img {
     width: 8vw;
-    margin: 25% 20%;
+    margin: 20% 25%;
+}
+
+.tech-nav-icon {
+    width: 5vw;
+    margin: 0 35%;    
+}
+
+.contact-nav-icon {
+    width: 12vw;
+    margin: 5% 15%;
 }
 
 .project-image {
@@ -330,6 +348,11 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.next-page {
+    transform: translateX(-250%);
+    opacity: 0;
 }
 
 .front-end {
