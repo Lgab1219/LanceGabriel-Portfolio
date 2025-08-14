@@ -9,7 +9,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 5px #111D4A;
     z-index: 0;
-    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    transition: opacity 5s ease-in-out, transform 1.5s ease-in-out;
     animation: openTransition 1s ease-in-out;
 }
 
@@ -292,6 +292,7 @@
     position: absolute;
     display: flex;
     width: 55vw;
+    animation: rotation 20s linear infinite;
 }
 
 .nav-btn-img {
@@ -350,9 +351,18 @@
     }
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .next-page {
-    transform: translateX(-250%);
     opacity: 0;
+    transform: translateX(-250%);
 }
 
 .front-end {
