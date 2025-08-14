@@ -9,7 +9,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 5px #111D4A;
     z-index: 0;
-    transition: opacity 5s ease-in-out, transform 1.5s ease-in-out;
+    transition: opacity 5s ease-in-out, transform 1s ease-in-out;
     animation: openTransition 1s ease-in-out;
 }
 
@@ -136,6 +136,12 @@
     align-self: center;
     align-items: center;
     text-align: center;
+}
+
+.wheel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 /*==== BUTTONS ====*/
@@ -290,7 +296,6 @@
 
 #profile-wheel {
     position: absolute;
-    display: flex;
     width: 55vw;
     animation: rotation 20s linear infinite;
 }
