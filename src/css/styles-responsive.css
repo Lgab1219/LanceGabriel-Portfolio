@@ -1,6 +1,4 @@
 @media screen and (min-width: 650px) {
-    /* INDEX */
-
     /*==== SECTIONS ====*/
     .main-container {
         display: flex;
@@ -96,8 +94,6 @@
 }
 
 @media screen and (min-width: 930px) {
-    /* INDEX */
-
     /*==== SECTIONS ====*/
     .main-content {
         margin: 10vh 0;
@@ -197,8 +193,6 @@
 }
 
 @media screen and (min-width: 1300px) {
-    /* INDEX */
-
     /*==== SECTIONS ====*/
     .projects {
         display: flex;
@@ -266,7 +260,7 @@
 }
 
 @media screen and (min-width: 1400px) {
-        /*==== IMAGES ====*/
+    /*==== IMAGES ====*/
     #round-profile {width: 25vw; height: 55vh;}
 
     #profile-wheel {
