@@ -11,6 +11,7 @@
     z-index: 0;
     transition: opacity 5s ease-in-out, transform 1.5s ease-in-out;
     animation: openTransition 1.5s ease-in-out;
+    opacity: 1;
 }
 
 .profile-container {
