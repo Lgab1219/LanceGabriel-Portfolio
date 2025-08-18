@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     // Redirect to the new page after the transition using setTimeout
                     window.location.href = href;
-                }, 1600); // Adjust timeout to match the CSS transition duration
+                }, 2000); // Adjust timeout to match the CSS transition duration
             }
         })
     });
