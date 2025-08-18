@@ -12,13 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const container = document.querySelector('.main-container');
                 container.classList.add('next-page');
 
-                // event listener that checks when the transition ends then redirects
-                // to the new page
-                container.addEventListener('transitionend', function handleTransition() {
-                    container.removeEventListener('transitionend', handleTransition);
-                    window.location.href = href; 
-                }
-            );
+                setTimeout(() => {
+                    // Redirect to the new page after the transition using setTimeout
+                    window.location.href = href;
+                }, 1600); // Adjust timeout to match the CSS transition duration
             }
         })
     });
