@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const container = document.querySelector('.main-container');
                 container.classList.add('next-page');
 
+                container.offsetHeight; // Trigger reflow to ensure transition starts
+
                 setTimeout(() => {
                     // Redirect to the new page after the transition using setTimeout
                     window.location.href = href;
-                }, 2000); // Adjust timeout to match the CSS transition duration
+                }, 1000); // Adjust timeout to match the CSS transition duration
             }
         })
     });
