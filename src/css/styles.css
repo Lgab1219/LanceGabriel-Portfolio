@@ -9,7 +9,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 5px #111D4A;
     z-index: 0;
-    transition: opacity 5s ease-in-out, transform 1.5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
     animation: openTransition 1.5s ease-in-out;
     opacity: 1;
 }
@@ -200,6 +200,7 @@
     left: 22vw;
     background-color: #FFCF99;
     border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Add or update in your styles.css */
