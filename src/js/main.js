@@ -14,10 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 container.offsetHeight; // Trigger reflow to ensure transition starts
 
-                setTimeout(() => {
-                    // Redirect to the new page after the transition using setTimeout
-                    window.location.href = href;
-                }, 1500); // Adjust timeout to match the CSS transition duration
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                        // Redirect to the new page after the transition using setTimeout
+                        window.location.href = href;
+                    }, 1300); // Adjust timeout to match the CSS transition duration
+                    })
+                })
             }
         })
     });
