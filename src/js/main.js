@@ -11,19 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add transition class to the main container
                 const container = document.querySelector('.main-container');
                 container.classList.add('next-page');
+                console.log("ADDED NEXT-PAGE");
 
                 container.offsetHeight; // Trigger reflow to ensure transition starts
 
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        setTimeout(() => {
-                        // Redirect to the new page after the transition using setTimeout
-                        window.location.href = href;
-                    }, 1300); // Adjust timeout to match the CSS transition duration
-                    })
-                })
-            }
-        })
+                container.addEventListener('transitionend', function handleTransition() {
+                container.removeEventListener('transitionend', handleTransition);
+                window.location.href = href;
+            })
+        }})
     });
 
     const ctaBtn = document.querySelector('.cta-btn');
@@ -37,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add transition class to the main container
                 const container = document.querySelector('.main-container');
                 container.classList.add('next-page');
+                console.log("ADDED NEXT-PAGE -- CTA");
 
                 // event listener that checks when the transition ends then redirects
                 // to the new page
@@ -57,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add transition class to the main container
                 const container = document.querySelector('.main-container');
                 container.classList.add('next-page');
+                console.log("ADDED NEXT-PAGE -- HOME");
 
                 // event listener that checks when the transition ends then redirects
                 // to the new page
