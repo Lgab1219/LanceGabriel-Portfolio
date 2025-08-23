@@ -1,10 +1,13 @@
+console.log("script loaded!");
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOMContentLoaded fired");
     // Navigation button event listeners for page transition
     document.querySelectorAll('.nav-btn').forEach(button => {
         button.addEventListener('click', function(e) {
             // Get selected button's href attribute
             const href = button.getAttribute('href');
+            console.log("Nav button clicked:", href);
 
             if (href && href !== '#') {
                 e.preventDefault();
@@ -15,9 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 container.offsetHeight; // Trigger reflow to ensure transition starts
 
-                container.addEventListener('transitionend', function handleTransition() {
-                container.removeEventListener('transitionend', handleTransition);
-                window.location.href = href;
+                requestAnimationFrame(() => {
+                    container.addEventListener('transitionend', function handleTransition() {
+                    container.removeEventListener('transitionend', handleTransition);
+                    window.location.href = href;
+                })
             })
         }})
     });
